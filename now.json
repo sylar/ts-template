@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "name": "ts-templace",
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "routes": [
+    {
+      "src": "/_next/static/(?:[^/]+/pages|chunks|runtime)/.+",
+      "headers": {
+        "cache-control": "immutable, max-age=31536000"
+      }
+    },
+    {
+      "src": "/.*",
+      "headers": {
+        "cache-control": "s-maxage=31536000"
+      }
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}
