@@ -16,7 +16,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.2-canary.2",
     "date-fns": "^2.14.0",
-    "next": "^9.4.5-canary.26",
+    "next": "^11.1.0",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
